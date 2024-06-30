@@ -48,13 +48,13 @@ export default function Header() {
 
   return (
     <>
-      <header className="w-full px-2 md:px-4 py-2 md:py-6 text-slate-500 bg-slate-200 dark:bg-slate-800 sticky">
-        <nav className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <header className="w-full text-slate-500 dark:text-slate-300 bg-slate-100 dark:bg-slate-800 sticky top-0 shadow-lg z-50">
+        <nav className="mx-auto max-w-7xl">
           {/* For Desktop Screen */}
-          <div className="relative hidden xl:flex h-16 items-center justify-between">
+          <div className="relative hidden xl:flex h-[80px] items-center justify-between">
             <Link
               href="/"
-              className="font-bold text-black text-xl flex items-center gap-2"
+              className="font-bold text-black dark:text-white/90 text-xl flex items-center gap-2"
             >
               <span>RanaCode</span>
               <Image
@@ -86,8 +86,8 @@ export default function Header() {
                   Services
                 </Link>
                 <div className="absolute lg:-left-48 top-3 transition group-hover:translate-y-5 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-500 ease-in-out group-hover:transform z-50 min-w-[700px] transform">
-                  <div className="relative top-6 p-8 bg-white rounded-t-lg shadow-xl w-full">
-                    <div className="w-10 h-10 bg-white transform rotate-45 absolute top-0 z-0 translate-x-0 transition-transform group-hover:translate-x-[12rem] duration-500 ease-in-out"></div>
+                  <div className="relative top-6 p-8 bg-white dark:bg-slate-800 rounded-t-lg shadow-xl w-full">
+                    <div className="w-10 h-10 bg-white dark:bg-slate-800 transform rotate-45 absolute top-0 z-0 translate-x-0 transition-transform group-hover:translate-x-[12rem] duration-500 ease-in-out"></div>
                     <div className="relative z-10">
                       <div className="grid grid-cols-2 gap-6">
                         {/* Left Side */}
@@ -95,7 +95,7 @@ export default function Header() {
                           <li>
                             <Link
                               href="/startups"
-                              className="flex p-4 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-200 hover:to-pink-200 hover:via-blue-200 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600 bg-slate-300 min-h-[100px]"
+                              className="flex p-4 -mx-2 rounded-lg transition ease-in-out duration-300 hover:scale-95 text-gray-800 dark:text-gray-100 font-semibold hover:text-indigo-600 dark:bg-slate-700 bg-slate-300 min-h-[100px]"
                             >
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -119,10 +119,10 @@ export default function Header() {
                                 <path d="M15 9m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
                               </svg>
                               <div>
-                                <h3 className="text-xl text-blue-600">
+                                <h3 className="text-xl text-blue-600 dark:text-gray-200 ">
                                   Software Development <br /> for Startups
                                 </h3>
-                                <p className="text-gray-500 font-normal text-sm">
+                                <p className="text-gray-500 dark:text-gray-300 font-normal text-sm">
                                   Our team builds everything from <br /> MVPs to
                                   ambitious features...
                                 </p>
@@ -132,7 +132,7 @@ export default function Header() {
                           <li>
                             <Link
                               href="/services/web-development"
-                              className="flex p-4 mt-4 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-200 hover:to-pink-200 hover:via-blue-200 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600 border bg-gray-100"
+                              className="flex p-4 mt-4 -mx-2 rounded-lg transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600 border dark:border-slate-600 bg-gray-100 dark:bg-transparent hover:scale-95"
                             >
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -169,7 +169,7 @@ export default function Header() {
                           <li>
                             <Link
                               href="/services/web-development"
-                              className="flex p-4 mt-4 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-200 hover:to-pink-200 hover:via-blue-200 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600 border bg-gray-100"
+                              className="flex p-4 mt-4 -mx-2 rounded-lg transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600 border dark:border-slate-600 bg-gray-100 dark:bg-transparent hover:scale-95"
                             >
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -211,7 +211,7 @@ export default function Header() {
                           <li>
                             <Link
                               href="/startups"
-                              className="flex p-4 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-200 hover:to-pink-200 hover:via-blue-200 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600 bg-slate-300 min-h-[100px]"
+                              className="flex p-4 -mx-2 rounded-lg transition ease-in-out duration-300 hover:scale-95 text-gray-800 dark:text-gray-100 font-semibold hover:text-indigo-600 dark:bg-slate-700 bg-slate-300 min-h-[100px]"
                             >
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -240,10 +240,10 @@ export default function Header() {
                                 <path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16" />
                               </svg>
                               <div>
-                                <h3 className="text-xl text-blue-600">
+                                <h3 className="text-xl text-blue-600 dark:text-gray-200 mb-2">
                                   Self-service Portals
                                 </h3>
-                                <p className="text-gray-500 mt-2 font-normal text-sm">
+                                <p className="text-gray-500 dark:text-gray-300 font-normal text-sm">
                                   Discover how we empower <br /> businesses to
                                   leap ahead with <br /> custom self-service
                                   portals.
@@ -254,7 +254,7 @@ export default function Header() {
                           <li>
                             <Link
                               href="/services/web-development"
-                              className="flex p-4 mt-4 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-200 hover:to-pink-200 hover:via-blue-200 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600 border bg-gray-100"
+                              className="flex p-4 mt-4 -mx-2 rounded-lg transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600 border dark:border-slate-600 bg-gray-100 dark:bg-transparent hover:scale-95"
                             >
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -293,7 +293,7 @@ export default function Header() {
                           <li>
                             <Link
                               href="/services/web-development"
-                              className="flex p-4 mt-4 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-200 hover:to-pink-200 hover:via-blue-200 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600 border bg-gray-100"
+                              className="flex p-4 mt-4 -mx-2 rounded-lg transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600 border dark:border-slate-600 bg-gray-100 dark:bg-transparent hover:scale-95"
                             >
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -333,7 +333,9 @@ export default function Header() {
                       </div>
                     </div>
                   </div>
-                  <div className="flex mt-6 justify-end items-center p-4 bg-gray-200 rounded-b-lg">
+
+                  {/* Lower Section */}
+                  <div className="flex mt-6 justify-end items-center p-4 bg-gray-200 rounded-b-lg dark:bg-slate-900">
                     <Link
                       href="/services"
                       className="bg-indigo-500 hover:bg-indigo-700 px-4 py-2 text-white rounded-md"
@@ -353,9 +355,9 @@ export default function Header() {
                 >
                   Case Studies
                 </Link>
-                <div className="absolute lg:-left-2 top-3 transition group-hover:translate-y-5 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-500 ease-in-out group-hover:transform z-50 min-w-[800px] transform rounded-lg">
-                  <div className="relative top-6 px-6 rounded-t-lg bg-white shadow-xl w-full">
-                    <div className="w-10 h-10 bg-white transform rotate-45 absolute top-0 z-0 -translate-x-4 transition-transform group-hover:translate-x-3 duration-500 ease-in-out"></div>
+                <div className="absolute lg:-left-2 top-3 transition group-hover:translate-y-5 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-500 ease-in-out group-hover:transform z-50 min-w-[600px] transform rounded-lg">
+                  <div className="relative top-6 px-6 rounded-t-lg bg-white dark:bg-slate-800 shadow-xl w-full">
+                    <div className="w-10 h-10 bg-white dark:bg-slate-800 transform rotate-45 absolute top-0 z-0 -translate-x-4 transition-transform group-hover:translate-x-3 duration-500 ease-in-out"></div>
                     <div className="relative z-10">
                       <div className="grid grid-cols-2 gap-6 pb-4">
                         {/* Left Side */}
@@ -363,7 +365,7 @@ export default function Header() {
                           <li>
                             <Link
                               href="/case-study/e&m"
-                              className="flex p-4 mt-4 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-200 hover:to-pink-200 hover:via-blue-200 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600 border bg-gray-100"
+                              className="flex p-4 mt-4 -mx-2 rounded-lg dark:bg-slate-700 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600 dark:hover:text-indigo-800 border dark:border-none bg-gray-100 hover:scale-95"
                             >
                               <Image
                                 src={emImage}
@@ -373,17 +375,17 @@ export default function Header() {
                                 className="rounded-xl mr-2"
                               />
                               <div>
-                                <h6 className="text-md text-blue-600">
+                                <h6 className="text-md text-blue-600 dark:text-gray-200">
                                   Estate Management Pro
                                 </h6>
-                                <p className="text-gray-500 font-normal text-sm">
-                                  Rental Management Property is an age-ol...
+                                <p className="text-gray-500 dark:text-gray-400 font-normal text-sm">
+                                  Rental Management Property is an age...
                                 </p>
                               </div>
                             </Link>
                             <Link
                               href="/case-study/e&m"
-                              className="flex p-4 mt-4 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-200 hover:to-pink-200 hover:via-blue-200 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600 border bg-gray-100"
+                              className="flex p-4 mt-4 -mx-2 rounded-lg transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600 border dark:border-none dark:hover:scale-95 bg-gray-100 dark:bg-slate-700"
                             >
                               <Image
                                 src={bbkImage}
@@ -393,8 +395,10 @@ export default function Header() {
                                 className="rounded-xl mr-2"
                               />
                               <div>
-                                <h6 className="text-md text-blue-600">BBK</h6>
-                                <p className="text-gray-500 font-normal text-sm">
+                                <h6 className="text-md text-blue-600 dark:text-gray-200">
+                                  BBK
+                                </h6>
+                                <p className="text-gray-500 font-normal text-sm dark:text-gray-400">
                                   Construction project finances can be dau...
                                 </p>
                               </div>
@@ -407,7 +411,7 @@ export default function Header() {
                           <li>
                             <Link
                               href="/case-study/e&m"
-                              className="flex p-4 mt-4 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-200 hover:to-pink-200 hover:via-blue-200 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600 border bg-gray-100"
+                              className="flex p-4 mt-4 -mx-2 rounded-lg transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600 border dark:border-none dark:hover:scale-95 bg-gray-100 dark:bg-slate-700"
                             >
                               <Image
                                 src={ShmoozImage}
@@ -417,17 +421,17 @@ export default function Header() {
                                 className="rounded-xl mr-2"
                               />
                               <div>
-                                <h6 className="text-md text-blue-600">
+                                <h6 className="text-md text-blue-600 dark:text-gray-200">
                                   Shmooz AI
                                 </h6>
-                                <p className="text-gray-500 font-normal text-sm">
+                                <p className="text-gray-500 dark:text-gray-400 font-normal text-sm">
                                   Ideas can be wild, and so are the founde...
                                 </p>
                               </div>
                             </Link>
                             <Link
                               href="/case-study/e&m"
-                              className="flex p-4 mt-4 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-200 hover:to-pink-200 hover:via-blue-200 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600 border bg-gray-100"
+                              className="flex p-4 mt-4 -mx-2 rounded-lg transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600 border dark:border-none dark:hover:scale-95 bg-gray-100 dark:bg-slate-700"
                             >
                               <Image
                                 src={YachadImage}
@@ -437,10 +441,10 @@ export default function Header() {
                                 className="rounded-xl mr-2"
                               />
                               <div>
-                                <h6 className="text-md text-blue-600">
+                                <h6 className="text-md text-blue-600 dark:text-gray-200">
                                   Yachad Tours
                                 </h6>
-                                <p className="text-gray-500 font-normal text-sm">
+                                <p className="text-gray-500 dark:text-gray-400 font-normal text-sm">
                                   How could automation elevate your effici...
                                 </p>
                               </div>
@@ -450,7 +454,7 @@ export default function Header() {
                       </div>
                     </div>
                   </div>
-                  <div className="w-full flex justify-end items-center h-auto p-3 bg-gray-200 rounded-b-lg mt-6">
+                  <div className="w-full flex justify-end items-center h-auto p-3 bg-gray-200 dark:bg-slate-900 rounded-b-lg mt-6">
                     <Link
                       className="px-8 py-2 bg-indigo-500 hover:bg-indigo-600 text-white rounded-md"
                       href="/case-study"
@@ -553,35 +557,265 @@ export default function Header() {
           </div>
 
           {/* For Mobile Screen and Tablet Screen */}
-          <div className="xl:hidden mx-auto px-2 flex justify-between items-center text-gray-800">
+          <div className="xl:hidden mx-auto px-2 flex justify-between items-center text-gray-800 dark:text-gray-100 sticky h-[60px]">
             <Link href="/" className="flex gap-2">
-              <span className="text-xl font-semibold hidden sm:flex">
-                RanaCode
-              </span>
-              <Image src={logo} width={30} height={30} alt="Logo" />
+              <span className="text-xl font-semibold">RanaCode</span>
+              <Image
+                src={logo}
+                width={30}
+                height={30}
+                alt="Logo"
+                className="hidden sm:flex"
+              />
             </Link>
-            <svg
-              onClick={hamburgerMenuToggler}
-              xmlns="http://www.w3.org/2000/svg"
-              width="36"
-              height="36"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              className="hover:bg-gray-300 p-1 rounded-md icon icon-tabler icons-tabler-outline icon-tabler-menu-2"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path d="M4 6l16 0" />
-              <path d="M4 12l16 0" />
-              <path d="M4 18l16 0" />
-            </svg>
+            {isNavOpen ? (
+              <svg
+                onClick={hamburgerMenuToggler}
+                xmlns="http://www.w3.org/2000/svg"
+                className="hover:bg-gray-300 p-1 rounded-full border border-slate-700 dark:hover:border-slate-100 dark:hover:bg-slate-800 cursor-pointer icon icon-tabler icon-tabler-x"
+                width="36"
+                height="36"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M18 6l-12 12" />
+                <path d="M6 6l12 12" />
+              </svg>
+            ) : (
+              <svg
+                onClick={hamburgerMenuToggler}
+                xmlns="http://www.w3.org/2000/svg"
+                width="36"
+                height="36"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                className="hover:bg-gray-300 p-1 rounded-md dark:hover:border dark:hover:border-slate-100 dark:hover:bg-transparent cursor-pointer icon icon-tabler icons-tabler-outline icon-tabler-menu-2"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M4 6l16 0" />
+                <path d="M4 12l16 0" />
+                <path d="M4 18l16 0" />
+              </svg>
+            )}
           </div>
         </nav>
       </header>
-      {isNavOpen && <div className="w-full bg-red-500">dkdfj</div>}
+      {isNavOpen && (
+        <div className="w-full text-gray-800 dark:text-gray-100 dark:bg-slate-800 bg-white flex flex-col sticky top-[60px]">
+          {/* Home Link */}
+          <Link
+            href="/"
+            className="flex gap-3 items-center px-6 py-2 w-full hover:bg-gray-200 dark:hover:bg-gray-700"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="icon icon-tabler icon-tabler-home-2"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#5F64EB"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M5 12l-2 0l9 -9l9 9l-2 0" />
+              <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+              <path d="M10 12h4v4h-4z" />
+            </svg>
+            <span>Home</span>
+          </Link>
+
+          {/* Services Link */}
+          <Link
+            href="/services"
+            className="flex gap-3 items-center px-6 py-2 w-full hover:bg-gray-200 mt-2 dark:hover:bg-gray-700"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="icon icon-tabler icon-tabler-layers-subtract"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#5F64EB"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M8 4m0 2a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2z" />
+              <path d="M16 16v2a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-8a2 2 0 0 1 2 -2h2" />
+            </svg>
+            <span>Services</span>
+          </Link>
+
+          {/* Case Studies Link */}
+          <Link
+            href="/case-study"
+            className="flex gap-3 items-center px-6 py-2 w-full hover:bg-gray-200 mt-2 dark:hover:bg-gray-700"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="icon icon-tabler icon-tabler-briefcase"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#5F64EB"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M3 7m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" />
+              <path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2" />
+              <path d="M12 12l0 .01" />
+              <path d="M3 13a20 20 0 0 0 18 0" />
+            </svg>
+            <span>Case Studies</span>
+          </Link>
+
+          {/* Career */}
+          <Link
+            href="/career"
+            className="flex gap-3 items-center px-6 py-2 w-full hover:bg-gray-200 mt-2 dark:hover:bg-gray-700"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="icon icon-tabler icon-tabler-briefcase"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#5F64EB"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M3 7m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" />
+              <path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2" />
+              <path d="M12 12l0 .01" />
+              <path d="M3 13a20 20 0 0 0 18 0" />
+            </svg>
+            <span>Career</span>
+          </Link>
+
+          {/* About */}
+          <Link
+            href="/about"
+            className="flex gap-3 items-center px-6 py-2 w-full hover:bg-gray-200 mt-2 dark:hover:bg-gray-700"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="icon icon-tabler icon-tabler-alert-circle"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#5F64EB"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+              <path d="M12 8v4" />
+              <path d="M12 16h.01" />
+            </svg>
+            <span>About</span>
+          </Link>
+
+          {/* Contact */}
+          <Link
+            href="/contact"
+            className="flex gap-3 items-center px-6 py-2 w-full hover:bg-gray-200 mt-2 dark:hover:bg-gray-700"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="icon icon-tabler icon-tabler-phone"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#5F64EB"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+            </svg>
+            <span>Contact</span>
+          </Link>
+
+          {/* Blogs Link */}
+          <Link
+            href="/blogs"
+            className="flex gap-3 items-center px-6 py-2 w-full hover:bg-gray-200 pb-4 border-b dark:border-b-slate-700 dark:hover:bg-gray-700"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="icon icon-tabler icon-tabler-writing"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#5F64EB"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M20 17v-12c0 -1.121 -.879 -2 -2 -2s-2 .879 -2 2v12l2 2l2 -2z" />
+              <path d="M16 7h4" />
+              <path d="M18 19h-13a2 2 0 1 1 0 -4h4a2 2 0 1 0 0 -4h-3" />
+            </svg>
+            <span>Blogs</span>
+          </Link>
+
+          <div className="flex flex-col mt-4">
+            <Link
+              href="https://calendly.com/ranacode6/web"
+              className="w-90% bg-indigo-600 text-white px-20 font-normal py-2 my-4 mx-auto rounded-md hover:bg-indigo-700"
+            >
+              Schedule a call
+            </Link>
+
+            {/* Dark Mode Toggler */}
+            <label className="swap swap-rotate text-primary dark:text-white mb-4">
+              <input id="darkSwitch" type="checkbox" onClick={togglemode} />
+
+              <svg
+                className="swap-on fill-current w-6 h-6"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z" />
+              </svg>
+
+              <svg
+                className="swap-off fill-current w-6 h-6"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
+              </svg>
+            </label>
+          </div>
+        </div>
+      )}
     </>
   );
 }
