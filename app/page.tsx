@@ -9,7 +9,7 @@ import Solutions from '@/components/Home/Solutions';
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-slate-700">
+    <main className="min-h-screen bg-slate-300 dark:bg-slate-700">
       <Hero />
       <ServedIndustryRoll />
       <ImageCompareViewer />
