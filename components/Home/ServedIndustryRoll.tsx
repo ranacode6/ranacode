@@ -343,7 +343,7 @@ export default function ServedIndustryRoll() {
         </div>
 
         {/* Duplicate */}
-        <div className="absolute top-0 pt-10 flex items-center animate-marquee2 whitespace-nowrap">
+        <div className="absolute top-0 flex items-center animate-marquee2 whitespace-nowrap">
           {/* Property Management */}
           <div className="mx-8 flex flex-col items-center justify-center hover:scale-105 hover:text-orange-400 gap-4">
             <svg
