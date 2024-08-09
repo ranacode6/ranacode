@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 50% 0;
+  }
+}
+.animate-bg {
+  animation: animatedBackground 5s linear infinite alternate;
+}
